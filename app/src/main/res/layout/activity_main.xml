@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/name"
+        android:textSize="100sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200sp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/levels">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level1"
+                    android:textSize="30dp"
+                    android:id="@+id/level1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level2"
+                    android:layout_margin="30dp"
+                    android:textSize="30dp"
+                    android:id="@+id/level2"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="90sp"
+                    android:textSize="30dp"
+                    android:id="@+id/level3"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level4"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="60sp"
+                    android:textSize="30dp"
+                    android:id="@+id/level4"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level5"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="70sp"
+                    android:textSize="30dp"
+                    android:id="@+id/level5"/>
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:text="@string/Start"
+        android:textSize="60sp"
+        android:id="@+id/start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Громкость музыки"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"/>
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:layout_marginTop="5dp"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/volume"/>
+
+
+</LinearLayout>
