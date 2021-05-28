@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 boolean check=false;
                 switch (checkedId){
-                    case R.id.level1:check=true;long levelID1=levelBut1.getId();intent.putExtra("levelID",levelID1);break;
-                    case R.id.level2:check=true;long levelID2=levelBut2.getId();intent.putExtra("levelID",levelID2);break;
-                    case R.id.level3:check=true;long levelID3=levelBut1.getId();intent.putExtra("levelID",levelID3);break;
-                    case R.id.level4:check=true;long levelID4=levelBut1.getId();intent.putExtra("levelID",levelID4);break;
-                    case R.id.level5:check=true;long levelID5=levelBut1.getId();intent.putExtra("levelID",levelID5);break;
+                    case R.id.level1:check=true;int levelID1=1;intent.putExtra("levelID",levelID1);break;
+                    case R.id.level2:check=true;int levelID2=2;intent.putExtra("levelID",levelID2);break;
+                    case R.id.level3:check=true;int levelID3=3;intent.putExtra("levelID",levelID3);break;
+                    case R.id.level4:check=true;int levelID4=4;intent.putExtra("levelID",levelID4);break;
+                    case R.id.level5:check=true;int levelID5=5;intent.putExtra("levelID",levelID5);break;
                     default:break;
                 }
                 final boolean finalCheck = check;

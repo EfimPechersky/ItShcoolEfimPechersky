@@ -9,10 +9,10 @@ import java.util.TimerTask;
 
 public class Level {
     int []tiles;
-    int [] delays;
+    long [] delays;
     int rawid;
 
-    public Level(int[] tiles, int[] delays, int rawid) {
+    public Level(int[] tiles, long[] delays, int rawid) {
         this.tiles = tiles;
         this.delays = delays;
         this.rawid = rawid;
